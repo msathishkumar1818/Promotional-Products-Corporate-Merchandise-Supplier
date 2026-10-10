@@ -63,6 +63,16 @@
   .footer-newsletter-col {
     grid-column: span 1 !important;
   }
+
+  /* Eco Section Tablet Sizing for iPad Pro 13, iPad Pro, Surface Pro */
+  .eco-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+    gap: 2.5rem !important;
+  }
+
+  .eco-visual-box img {
+    height: 380px !important;
+  }
 }
 
 /* Tablet & Mobile Section Grids (<= 1024px) */
@@ -574,6 +584,16 @@
 
   .auth-box-card {
     padding: 1.75rem 1.25rem;
+  }
+
+  .eco-pills-row {
+    gap: 0.5rem;
+    margin: 1.25rem 0 1.75rem 0;
+  }
+
+  .eco-pill {
+    font-size: 0.78rem;
+    padding: 0.4rem 0.75rem;
   }
 
   .btn-group-pair,
