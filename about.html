@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Our Corporate Merchandise Company | PromoCorp</title>
+  <meta name="description"
+    content="Discover PromoCorp's heritage, global production facilities, sustainable sourcing standards, and executive leadership in corporate merchandise and promotional products.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+  <!-- ==========================================
+       BRANDED PAGE LOADER
+       ========================================== -->
+  <div id="page-loader" aria-hidden="true">
+    <div class="loader-brand">
+      <div class="loader-ring"></div>
+      <img src="assets/images/logo.png" alt="PromoCorp Logo" width="58" height="58">
+    </div>
+    <div class="loader-text">Company Heritage</div>
+  </div>
+
+  <!-- ==========================================
+       FIXED COMPACT HEADER
+       ========================================== -->
+  <header id="site-header">
+    <div class="container-custom header-container">
+
+      <!-- Brand Identity -->
+      <a href="index.html" class="brand-identity" aria-label="PromoCorp Homepage">
+        <img src="assets/images/logo.png" alt="PromoCorp Logo" class="brand-logo-img" width="38" height="38">
+        <div class="brand-info">
+          <span class="brand-name">PROMO<span>CORP</span></span>
+          <span class="brand-tagline">Corporate Merchandise</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation (Exactly 6 Nav Items on One Line) -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul style="display: flex; align-items: center; gap: 0.25rem; list-style: none; margin: 0; padding: 0;">
+
+          <!-- 1. Home with Click-Only Dropdown -->
+          <li class="nav-item has-dropdown">
+            <button type="button" class="nav-link" id="home-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+              <span>Home</span>
+              <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li role="none">
+                <a href="index.html" class="dropdown-link" role="menuitem">
+                  <span>Home 1 - Corporate</span>
+                  <span class="dropdown-badge">Default</span>
+                </a>
+              </li>
+              <li role="none">
+                <a href="home-2.html" class="dropdown-link" role="menuitem">
+                  <span>Home 2 - Creative Swag</span>
+                  <span class="dropdown-badge">Studio</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- 2. Products -->
+          <li class="nav-item">
+            <a href="products.html" class="nav-link">Products</a>
+          </li>
+
+          <!-- 3. Custom Branding -->
+          <li class="nav-item">
+            <a href="custom-branding.html" class="nav-link">Custom Branding</a>
+          </li>
+
+          <!-- 4. About (Active - Mandatory) -->
+          <li class="nav-item">
+            <a href="about.html" class="nav-link active">About</a>
+          </li>
+
+          <!-- 5. Contact (Directly Visible) -->
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <!-- Action Controls: RTL, Dark Mode, Quote CTA Button, Mobile Hamburger -->
+      <div class="header-actions">
+
+        <!-- RTL Toggle -->
+        <button type="button" class="btn-icon rtl-toggle-btn" aria-label="Switch text direction">
+          <span class="dir-label" style="font-size: 0.72rem; font-weight: 800; letter-spacing: 0.05em;">RTL</span>
+        </button>
+
+        <!-- Dark Mode Toggle -->
+        <button type="button" class="btn-icon theme-toggle-btn" aria-label="Toggle dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <!-- Request a Quote CTA Button -->
+        <a href="contact.html#quote" class="btn-header-cta" aria-label="Request a Corporate Quote">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+          </svg>
+          <span>Request a Quote</span>
+        </a>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button type="button" class="mobile-toggle-btn" id="mobile-menu-btn" aria-label="Open mobile menu"
+          aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==========================================
+       MOBILE DRAWER NAVIGATION
+       ========================================== -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+
+    <!-- Mobile Drawer Header -->
+    <div class="mobile-drawer-header">
+      <div class="brand-identity">
+        <img src="assets/images/logo.png" alt="PromoCorp Logo" class="brand-logo-img" width="34" height="34">
+        <div class="brand-info">
+          <span class="brand-name">PROMO<span>CORP</span></span>
+          <span class="brand-tagline">Corporate Merchandise</span>
+        </div>
+      </div>
+      <button type="button" class="mobile-drawer-close" id="mobile-drawer-close" aria-label="Close mobile menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Links -->
+    <ul class="mobile-nav-list">
+
+      <!-- Home with Accordion -->
+      <li class="mobile-nav-item" id="mobile-home-accordion-item">
+        <button type="button" class="mobile-nav-link mobile-accordion-btn" id="mobile-home-accordion-btn"
+          aria-expanded="false">
+          <span>Home</span>
+          <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="mobile-accordion-content">
+          <a href="index.html" class="mobile-sub-link">Home 1 - Corporate Edition</a>
+          <a href="home-2.html" class="mobile-sub-link">Home 2 - Creative Swag Studio</a>
+        </div>
+      </li>
+
+      <li><a href="products.html" class="mobile-nav-link">Products</a></li>
+      <li><a href="custom-branding.html" class="mobile-nav-link">Custom Branding</a></li>
+      <li><a href="about.html" class="mobile-nav-link active">About</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+
+    </ul>
+
+    <!-- Mobile Drawer Footer -->
+    <div class="mobile-drawer-footer">
+      <a href="contact.html#quote" class="btn-header-cta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+        </svg>
+        <span>Request a Quote</span>
+      </a>
+    </div>
+
+  </aside>
+
+  <!-- ==========================================
+       MAIN CONTENT (ABOUT PAGE - EXACTLY 5 MAIN SECTIONS)
+       ========================================== -->
+  <main id="main-content">
+
+    <!-- ----------------------------------------------------
+         SECTION 1: HERITAGE & INFRASTRUCTURE HERO
+         ---------------------------------------------------- -->
+    <section class="about-hero-section" id="about-heritage">
+      <!-- Hero Background Image & Atmospheric Overlay -->
+      <img src="assets/images/about/about-hero-bg.jpg" alt="PromoCorp Global Campus and Logistics Facility"
+        class="about-hero-bg-img" loading="eager">
+      <div class="about-hero-overlay"></div>
+
+      <div class="container-custom about-hero-container">
+        <div class="about-hero-content-center">
+          <span class="section-eyebrow about-hero-eyebrow">Enterprise Heritage</span>
+          <h1 class="section-title about-hero-title">Global Merchandise Manufacturing Since 2012</h1>
+          <p class="section-subtitle about-hero-subtitle">
+            Pioneering high-volume promotional merchandise, certified ethical supply chains, and door-to-door corporate
+            kitting across 45+ countries.
+          </p>
+          <div class="about-hero-actions">
+            <a href="contact.html#quote" class="btn-primary">Partner With Us</a>
+          </div>
+        </div>
+
+        <!-- Centered Heritage Pillars Row -->
+        <div class="about-pillars-row">
+          <div class="about-pillar-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span>14+ Years Global Leadership</span>
+          </div>
+          <div class="about-pillar-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span>100% In-House Production</span>
+          </div>
+          <div class="about-pillar-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span>Zero Landfill Commitment</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------
+         SECTION 2: CORE VALUES & CRAFTSMANSHIP (3 EVEN CARDS)
+         ---------------------------------------------------- -->
+    <section class="about-values-section" id="about-values">
+      <div class="container-custom">
+        <div style="text-align: center; max-width: 650px; margin: 0 auto;">
+          <span class="section-eyebrow">Guiding Principles</span>
+          <h2 class="section-title">Engineered on Core Pillars</h2>
+          <p class="section-subtitle" style="margin: 0 auto;">Every contract executed with absolute accountability.</p>
+        </div>
+
+        <div class="about-values-grid">
+
+          <!-- Value 1 -->
+          <article class="about-val-card">
+            <div class="about-val-img-box">
+              <img src="assets/images/about/p31.jpg" alt="Precision Craftsmanship Standards" width="400" height="250"
+                loading="lazy">
+            </div>
+            <div class="about-val-card-body">
+              <div>
+                <h3 class="about-val-title">Precision Obsession</h3>
+                <p class="about-val-desc">Automated optical inspection and strict Delta-E tolerance testing before any
+                  carton leaves our dock.</p>
+              </div>
+              <div class="promo-card-meta">
+                <span>Standard: <strong>Sub-Millimeter</strong></span>
+                <span class="dropdown-badge">Certified</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Value 2 -->
+          <article class="about-val-card">
+            <div class="about-val-img-box">
+              <img src="assets/images/about/p32.jpg" alt="Circular Eco Materials" width="400" height="250"
+                loading="lazy">
+            </div>
+            <div class="about-val-card-body">
+              <div>
+                <h3 class="about-val-title">Circular Sustainability</h3>
+                <p class="about-val-desc">100% GOTS organic cotton, recycled ocean-bound rPET fabrics, and biodegradable
+                  shipping mailers.</p>
+              </div>
+              <div class="promo-card-meta">
+                <span>Standard: <strong>FSC &amp; GOTS</strong></span>
+                <span class="dropdown-badge">Eco-First</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Value 3 -->
+          <article class="about-val-card">
+            <div class="about-val-img-box">
+              <img src="assets/images/products/p33.jpg" alt="Ethical Global Supply Chain" width="400" height="250"
+                loading="lazy">
+            </div>
+            <div class="about-val-card-body">
+              <div>
+                <h3 class="about-val-title">Ethical Supply Integrity</h3>
+                <p class="about-val-desc">SEDEX SMETA-4 pillar compliance, fair living wages, and transparent factory
+                  audits worldwide.</p>
+              </div>
+              <div class="promo-card-meta">
+                <span>Standard: <strong>ISO 9001</strong></span>
+                <span class="dropdown-badge">Audited</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------
+         SECTION 3: PRODUCTION FLOOR PANORAMA
+         ---------------------------------------------------- -->
+    <section class="about-facility-section" id="about-facilities">
+      <div class="container-custom">
+        <div style="text-align: center; max-width: 700px; margin: 0 auto 2.5rem auto;">
+          <span class="section-eyebrow">Manufacturing Power</span>
+          <h2 class="section-title">45,000 Sq.Ft Automated Production Floor</h2>
+          <p class="section-subtitle" style="margin: 0 auto;">Equipped with Tajima multi-head embroidery lines and
+            high-speed rotary fiber lasers.</p>
+        </div>
+
+        <div class="facility-panorama-box">
+          <img src="assets/images/about/p34.jpg" alt="PromoCorp Automated Production and Kitting Facility" width="1200"
+            height="480" loading="lazy">
+
+          <div class="facility-dock">
+            <div class="facility-dock-item"><span class="accent">45,000 sq.ft</span> Facility</div>
+            <div class="facility-dock-item"><span class="accent">60,000+</span> Daily Units</div>
+            <div class="facility-dock-item"><span class="accent">45+</span> Export Nations</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------
+         SECTION 4: LEADERSHIP DIRECTORS (3 EVEN PORTRAITS)
+         ---------------------------------------------------- -->
+    <section class="about-team-section" id="about-team">
+      <div class="container-custom">
+        <div style="text-align: center; max-width: 650px; margin: 0 auto;">
+          <span class="section-eyebrow">Executive Team</span>
+          <h2 class="section-title">Specialist Leadership</h2>
+          <p class="section-subtitle" style="margin: 0 auto;">Industry veterans driving global merchandise innovation.
+          </p>
+        </div>
+
+        <div class="about-team-grid">
+
+          <div class="team-card">
+            <div class="team-img-box">
+              <img src="assets/images/about/team-marcus.jpg" alt="Marcus Vance Chief Merchandise Officer" width="400"
+                height="400" loading="lazy">
+            </div>
+            <div class="team-card-body">
+              <div>
+                <div class="team-name">Marcus Vance</div>
+                <div class="team-role">Chief Merchandise Officer</div>
+                <p class="team-desc">20+ years steering high-volume global apparel and enterprise brand partnerships.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-img-box">
+              <img src="assets/images/about/team-elena.jpg" alt="Elena Rostova Director of Sustainable Sourcing"
+                width="400" height="400" loading="lazy">
+            </div>
+            <div class="team-card-body">
+              <div>
+                <div class="team-name">Elena Rostova</div>
+                <div class="team-role">Director of Sustainable Sourcing</div>
+                <p class="team-desc">Pioneered circular zero-plastic packaging guidelines across European fulfillment.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-img-box">
+              <img src="assets/images/about/team-david.jpg" alt="David Kim VP Global Fulfillment" width="400"
+                height="400" loading="lazy">
+            </div>
+            <div class="team-card-body">
+              <div>
+                <div class="team-name">David Kim</div>
+                <div class="team-role">VP Global Fulfillment</div>
+                <p class="team-desc">Oversees automated multi-drop logistics and 99.8% on-time delivery commitments.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------
+         SECTION 5: FINAL PARTNERSHIP CTA
+         ---------------------------------------------------- -->
+    <section class="about-cta-section" id="about-cta">
+      <div class="container-custom">
+        <div class="cta-inner-card">
+          <h2>Partner With an Industry-Leading Supplier</h2>
+          <p>
+            Connect with our dedicated corporate account directors to discuss enterprise volume agreements, annual
+            conference swags, or automated onboarding kitting.
+          </p>
+          <div class="cta-btn-group">
+            <a href="contact.html#quote" class="btn-cta-white">
+              <span>Schedule Consultation</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="products.html" class="btn-cta-outline">Explore Product Catalog</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       SHARED FOOTER
+       ========================================== -->
+  <footer id="site-footer">
+    <div class="container-custom">
+      <div class="footer-grid">
+
+        <!-- Block 1: Brand & Socials (Top-Left) -->
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-identity">
+            <img src="assets/images/logo.png" alt="PromoCorp Logo" class="brand-logo-img" width="38" height="38">
+            <div class="brand-info">
+              <span class="brand-name">PROMO<span>CORP</span></span>
+              <span class="brand-tagline">Corporate Merchandise</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            Industry-leading manufacturer &amp; global supplier of premium branded promotional products, executive
+            gifts, custom apparel, and sustainable enterprise swag collections since 2012.
+          </p>
+
+          <!-- Social Media Icons (Reference Model) -->
+          <div class="footer-social-row">
+            <a href="https://linkedin.com" class="footer-social-btn" aria-label="LinkedIn" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://instagram.com" class="footer-social-btn" aria-label="Instagram" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://youtube.com" class="footer-social-btn" aria-label="YouTube" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+              </svg>
+            </a>
+            <a href="https://wa.me/18005557924" class="footer-social-btn" aria-label="WhatsApp" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </a>
+          </div>
+
+          <div class="footer-badges">
+            <span class="footer-badge-pill">ISO 9001 Certified</span>
+            <span class="footer-badge-pill">Eco-Friendly Sourcing</span>
+          </div>
+        </div>
+
+        <!-- Block 2: SHOP (Top-Right) -->
+        <div class="footer-col-shop">
+          <h2 class="footer-heading">SHOP</h2>
+          <ul class="footer-nav-list">
+            <li><a href="products.html#drinkware" class="footer-link">Custom Drinkware</a></li>
+            <li><a href="products.html#apparel" class="footer-link">Corporate Apparel</a></li>
+            <li><a href="products.html#tech" class="footer-link">Tech &amp; Accessories</a></li>
+            <li><a href="products.html#stationery" class="footer-link">Eco Stationery</a></li>
+            <li><a href="products.html#executive" class="footer-link">Executive Hampers</a></li>
+            <li><a href="products.html#bags" class="footer-link">Custom Bags &amp; Packs</a></li>
+            <li><a href="products.html" class="footer-link footer-link-highlight">All products &rarr;</a></li>
+          </ul>
+        </div>
+
+        <!-- Block 3: COMPANY (Bottom-Left) -->
+        <div class="footer-col-company">
+          <h2 class="footer-heading">COMPANY</h2>
+          <ul class="footer-nav-list">
+            <li><a href="about.html" class="footer-link">About us</a></li>
+            <li><a href="custom-branding.html" class="footer-link">Services</a></li>
+            <li><a href="contact.html#quote" class="footer-link">Bulk ordering</a></li>
+            <li><a href="home-2.html" class="footer-link">Swag lookbook</a></li>
+            <li><a href="contact.html" class="footer-link">Contact &amp; Support</a></li>
+            <li><a href="contact.html#quote" class="footer-link footer-link-highlight">Open an account &rarr;</a></li>
+          </ul>
+        </div>
+
+        <!-- Block 4: VISIT OR CALL (Bottom-Right) -->
+        <div class="footer-col-contact">
+          <h2 class="footer-heading">VISIT OR CALL</h2>
+          <div class="footer-contact-items-wrap">
+
+            <div class="footer-contact-item">
+              <div class="footer-icon-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="footer-contact-text">
+                <span>742 Merchandise Way, Suite 400, Industrial Park, NY 10001</span>
+              </div>
+            </div>
+
+            <div class="footer-contact-item">
+              <div class="footer-icon-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+              </div>
+              <div class="footer-contact-text">
+                <a href="tel:+18005557924" class="footer-contact-link">+1 (800) 555-SWAG (7924)</a>
+              </div>
+            </div>
+
+            <div class="footer-contact-item">
+              <div class="footer-icon-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="footer-contact-text">
+                <a href="mailto:quotes@promocorpmerch.com" class="footer-contact-link">quotes@promocorpmerch.com</a>
+              </div>
+            </div>
+
+            <div class="footer-contact-item">
+              <div class="footer-icon-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div class="footer-contact-text">
+                <div>Mon to Sat: 8:30 am to 7:00 pm</div>
+                <div class="footer-hours-closed">Sunday: closed</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 PromoCorp Global Merchandise Ltd. GSTIN 27AAKCP4417M1Z3. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="contact.html#privacy" class="footer-link">Privacy policy</a>
+          <a href="contact.html#terms" class="footer-link">Terms of sale</a>
+          <a href="contact.html#compliance" class="footer-link">Social Compliance</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       SCROLL TO TOP BUTTON
+       ========================================== -->
+  <button type="button" id="scroll-top-btn" aria-label="Scroll to top of page">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+      stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Centralized External Script (Zero Inline Script) -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

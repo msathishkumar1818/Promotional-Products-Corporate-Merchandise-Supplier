@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Swag Studio &amp; Corporate Merchandise | PromoCorp</title>
+  <meta name="description"
+    content="Explore custom branded swag kits, creative corporate merchandise suites, and bespoke unboxing experiences designed for modern brands.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+  <!-- ==========================================
+       BRANDED PAGE LOADER
+       ========================================== -->
+  <div id="page-loader" aria-hidden="true">
+    <div class="loader-brand">
+      <div class="loader-ring"></div>
+      <img src="assets/images/logo.png" alt="PromoCorp Logo" width="58" height="58">
+    </div>
+    <div class="loader-text">Swag Studio Edition</div>
+  </div>
+
+  <!-- ==========================================
+       FIXED COMPACT HEADER
+       ========================================== -->
+  <header id="site-header">
+    <div class="container-custom header-container">
+
+      <!-- Brand Identity -->
+      <a href="index.html" class="brand-identity" aria-label="PromoCorp Homepage">
+        <img src="assets/images/logo.png" alt="PromoCorp Logo" class="brand-logo-img" width="38" height="38">
+        <div class="brand-info">
+          <span class="brand-name">PROMO<span>CORP</span></span>
+          <span class="brand-tagline">Corporate Merchandise</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation (Exactly 6 Nav Items on One Line) -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul style="display: flex; align-items: center; gap: 0.25rem; list-style: none; margin: 0; padding: 0;">
+
+          <!-- 1. Home with Click-Only Dropdown -->
+          <li class="nav-item has-dropdown">
+            <button type="button" class="nav-link active" id="home-dropdown-btn" aria-expanded="false"
+              aria-haspopup="true">
+              <span>Home</span>
+              <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li role="none">
+                <a href="index.html" class="dropdown-link" role="menuitem">
+                  <span>Home 1 - Corporate</span>
+                  <span class="dropdown-badge">Default</span>
+                </a>
+              </li>
+              <li role="none">
+                <a href="home-2.html" class="dropdown-link active" role="menuitem">
+                  <span>Home 2 - Creative Swag</span>
+                  <span class="dropdown-badge">Studio</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- 2. Products -->
+          <li class="nav-item">
+            <a href="products.html" class="nav-link">Products</a>
+          </li>
+
+          <!-- 3. Custom Branding -->
+          <li class="nav-item">
+            <a href="custom-branding.html" class="nav-link">Custom Branding</a>
+          </li>
+
+          <!-- 4. About (Mandatory) -->
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+
+          <!-- 5. Contact (Directly Visible) -->
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <!-- Action Controls: RTL, Dark Mode, Quote CTA Button, Mobile Hamburger -->
+      <div class="header-actions">
+
+        <!-- RTL Toggle -->
+        <button type="button" class="btn-icon rtl-toggle-btn" aria-label="Switch text direction">
+          <span class="dir-label" style="font-size: 0.72rem; font-weight: 800; letter-spacing: 0.05em;">RTL</span>
+        </button>
+
+        <!-- Dark Mode Toggle -->
+        <button type="button" class="btn-icon theme-toggle-btn" aria-label="Toggle dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <!-- Request a Quote CTA Button -->
+        <a href="contact.html#quote" class="btn-header-cta" aria-label="Request a Corporate Quote">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+          </svg>
+          <span>Request a Quote</span>
+        </a>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button type="button" class="mobile-toggle-btn" id="mobile-menu-btn" aria-label="Open mobile menu"
+          aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==========================================
+       MOBILE DRAWER NAVIGATION
+       ========================================== -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+
+    <!-- Mobile Drawer Header -->
+    <div class="mobile-drawer-header">
+      <div class="brand-identity">
+        <img src="assets/images/logo.png" alt="PromoCorp Logo" class="brand-logo-img" width="34" height="34">
+        <div class="brand-info">
+          <span class="brand-name">PROMO<span>CORP</span></span>
+          <span class="brand-tagline">Corporate Merchandise</span>
+        </div>
+      </div>
+      <button type="button" class="mobile-drawer-close" id="mobile-drawer-close" aria-label="Close mobile menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Links -->
+    <ul class="mobile-nav-list">
+
+      <!-- Home with Accordion (Closed by default, opens on click) -->
+      <li class="mobile-nav-item" id="mobile-home-accordion-item">
+        <button type="button" class="mobile-nav-link mobile-accordion-btn active" id="mobile-home-accordion-btn"
+          aria-expanded="false">
+          <span>Home</span>
+          <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="mobile-accordion-content">
+          <a href="index.html" class="mobile-sub-link">Home 1 - Corporate Edition</a>
+          <a href="home-2.html" class="mobile-sub-link active">Home 2 - Creative Swag Studio</a>
+        </div>
+      </li>
+
+      <li><a href="products.html" class="mobile-nav-link">Products</a></li>
+      <li><a href="custom-branding.html" class="mobile-nav-link">Custom Branding</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+
+    </ul>
+
+    <!-- Mobile Drawer Footer -->
+    <div class="mobile-drawer-footer">
+      <a href="contact.html#quote" class="btn-header-cta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+        </svg>
+        <span>Request a Quote</span>
+      </a>
+    </div>
+
+  </aside>
+
+  <!-- ==========================================
+       MAIN CONTENT (HOME 2 - EXACTLY 6 MAIN CONTENT SECTIONS)
+       ========================================== -->
+  <main id="main-content">
+
+    <!-- ----------------------------------------------------
+         SECTION 1: PANORAMIC STUDIO HERO (FULL-PAGE BILLBOARD & GLASS BOX)
+         ---------------------------------------------------- -->
+    <section class="h2-hero-panorama" id="h2-hero">
+      <!-- Full Page Background Image Covering Whole Viewport -->
+      <img src="assets/images/hero/p9.jpg" alt="Creative Swag Studio Presentation" class="h2-hero-bg-img"
+        loading="eager">
+      <div class="h2-hero-overlay"></div>
+
+      <!-- Container with Centered Content Directly Over Background Image (Zero Box) -->
+      <div class="container-custom">
+        <div class="h2-hero-content-wrap">
+          <span class="section-eyebrow h2-hero-eyebrow">Creative Swag Studio</span>
+          <h1 class="h2-hero-title">Custom Brand Merch Designed to Inspire</h1>
+          <p class="h2-hero-lead">High-touch promotional kits and premium company merchandise for visionary brands.</p>
+
+          <div class="h2-hero-btns">
+            <a href="contact.html#quote" class="btn-primary">Build Your Swag Kit</a>
+            <a href="products.html" class="btn-cta-outline">Browse Studio </a>
+          </div>
+
+          <!-- Feature Pills Dock -->
+          <div class="h2-hero-dock">
+            <div class="h2-dock-pill"><span class="dot"></span> Custom Curated</div>
+            <div class="h2-dock-pill"><span class="dot"></span> Zero Landfill Waste</div>
+            <div class="h2-dock-pill"><span class="dot"></span> Global Drop-Shipping</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ----------------------------------------------------
+         SECTION 2: ASYMMETRIC LOOKBOOK MOSAIC (ZERO CARDS)
+         ---------------------------------------------------- -->
+    <section class="h2-lookbook-section" id="h2-lookbook">
+      <div class="container-custom">
+        <div class="section-header-center">
+          <span class="section-eyebrow">Studio Lookbook</span>
+          <h2 class="section-title">Curated Merchandise Aesthetic</h2>
+          <p class="section-subtitle">Editorial showcase of our signature craft combinations.</p>
+        </div>
+
+        <div class="h2-lookbook-grid">
+
+          <!-- Tall Portrait Visual -->
+          <div class="lookbook-item-tall">
+            <img src="assets/images/gallery/p10.jpg" alt="Executive Desk Merchandise Set" width="600" height="520"
+              loading="lazy">
+            <div class="lookbook-tag">
+              <div class="lookbook-tag-title">Executive Desk Collection</div>
+              <div class="lookbook-tag-sub">Anodized Pen &amp; Leather Accents</div>
+            </div>
+          </div>
+
+          <!-- Stacked Visual Column -->
+          <div class="lookbook-stacked-col">
+            <div class="lookbook-item-stacked">
+              <img src="assets/images/gallery/p11.jpg" alt="Debossed Leatherbound Notebook" width="500" height="245"
+                loading="lazy">
+              <div class="lookbook-tag">
+                <div class="lookbook-tag-title">Debossed Seed Notebook</div>
+                <div class="lookbook-tag-sub">Deep Foil Blind Stamp</div>
+              </div>
+            </div>
+            <div class="lookbook-item-stacked">
+              <img src="assets/images/gallery/p12.jpg" alt="Premium Streetwear Apparel" width="500" height="245"
+                loading="lazy">
+              <div class="lookbook-tag">
+                <div class="lookbook-tag-title">Heavyweight Cotton Apparel</div>
+                <div class="lookbook-tag-sub">400GSM Custom Dyed</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------
+         SECTION 3: BESPOKE UNBOXING & KITTING EXPERIENCE
+         ---------------------------------------------------- -->
+    <section class="h2-unboxing-section" id="h2-unboxing">
+      <div class="container-custom">
+        <div class="unboxing-card-wrap">
+          <img src="assets/images/sections/p13.jpg" alt="Custom Merchandise Unboxing Experience" class="unboxing-bg-img"
+            width="1200" height="520" loading="lazy">
+          <div class="unboxing-card-overlay"></div>
+
+          <div class="unboxing-overlay-content">
+            <div class="unboxing-header">
+              <div class="unboxing-badge">
+                <span class="unboxing-badge-dot"></span>
+                <span>Turnkey Experience</span>
+              </div>
+              <h2 class="unboxing-title">Bespoke Packaging &amp; Individual Unboxing</h2>
+              <p class="unboxing-subtitle">FSC-certified custom packaging, tailored kitting, and direct-to-desk
+                worldwide dispatch.</p>
+            </div>
+
+            <!-- Structured 3-Step Strip -->
+            <div class="unboxing-steps-row">
+              <div class="unboxing-step-card">
+                <div class="unboxing-step-num">01</div>
+                <div class="unboxing-step-body">
+                  <div class="unboxing-step-title">Custom Box Engineering</div>
+                  <div class="unboxing-step-desc">FSC-certified rigid mailers with branded tissue, ribbon, and insert
+                    cards.</div>
+                </div>
+              </div>
+
+              <div class="unboxing-step-card">
+                <div class="unboxing-step-num">02</div>
+                <div class="unboxing-step-body">
+                  <div class="unboxing-step-title">Precision Kitting</div>
+                  <div class="unboxing-step-desc">Hand-assembled swag bundles with custom foam inserts for each item.
+                  </div>
+                </div>
+              </div>
+
+              <div class="unboxing-step-card">
+                <div class="unboxing-step-num">03</div>
+                <div class="unboxing-step-body">
+                  <div class="unboxing-step-title">Direct-to-Desk Dispatch</div>
+                  <div class="unboxing-step-desc">Individual address shipping across 45+ countries with live tracking.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------
+         SECTION 4: INDUSTRY MERCHANDISE SUITES (EVEN VERTICALS)
+         ---------------------------------------------------- -->
+    <section class="h2-suites-section" id="h2-suites">
+      <div class="container-custom">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <span class="section-eyebrow">Targeted Solutions</span>
+            <h2 class="section-title">Industry Merchandise Suites</h2>
+          </div>
+          <p class="section-subtitle" style="margin-bottom: 0;">Tailored kits for every milestone and corporate
+            occasion.</p>
+        </div>
+
+        <!-- 2 Even Visual Portals -->
+        <div class="h2-suites-grid">
+
+          <div class="suite-card">
+            <img src="assets/images/sections/p14.jpg" alt="VIP Executive Gifts" width="600" height="440" loading="lazy">
+            <div class="suite-card-overlay"></div>
+            <div class="suite-card-content">
+              <h3>VIP &amp; Executive Hampers</h3>
+              <p>Hand-crafted leather goods, crystal awards, and artisan gourmet treats for boardrooms.</p>
+              <a href="contact.html#quote" class="btn-primary"
+                style="padding: 0.55rem 1.25rem; font-size: 0.88rem;">Request VIP Kit &rarr;</a>
+            </div>
+          </div>
+
+          <div class="suite-card">
+            <img src="assets/images/sections/p15.jpg" alt="Event & Conference Swag Kits" width="600" height="440"
+              loading="lazy">
+            <div class="suite-card-overlay"></div>
+            <div class="suite-card-content">
+              <h3>Event &amp; Conference Bundles</h3>
+              <p>High-volume lanyards, badge holders, technical tees, and drinkware with 5-day dispatch.</p>
+              <a href="contact.html#quote" class="btn-primary"
+                style="padding: 0.55rem 1.25rem; font-size: 0.88rem;">Request Event Kit &rarr;</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------
+         SECTION 5: RIGOROUS QUALITY TESTING LAB
+         ---------------------------------------------------- -->
+    <section class="h2-quality-section" id="h2-quality">
+      <div class="container-custom">
+        <div class="quality-grid">
+
+          <div>
+            <span class="section-eyebrow">Lab Verification</span>
+            <h2 class="section-title">Industrial Testing &amp; Quality Control</h2>
+            <p class="section-subtitle">Every piece inspected under strict commercial standards before release.</p>
+
+            <div class="quality-stats-list">
+
+              <div class="quality-stat-row">
+                <div class="quality-stat-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div style="font-weight: 700; color: var(--text-main); font-size: 0.95rem;">Spectrophotometer Color
+                    Proofing</div>
+                  <div style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.15rem;">Delta-E &lt; 1.0
+                    Pantone shade tolerance guarantee.</div>
+                </div>
+              </div>
+
+              <div class="quality-stat-row">
+                <div class="quality-stat-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div style="font-weight: 700; color: var(--text-main); font-size: 0.95rem;">Abrasion &amp; Wash
+                    Testing</div>
+                  <div style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.15rem;">Certified for 80+
+                    high-temp commercial laundering cycles.</div>
+                </div>
+              </div>
+
+              <div class="quality-stat-row">
+                <div class="quality-stat-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div style="font-weight: 700; color: var(--text-main); font-size: 0.95rem;">Rapid 24-Hour Prototype
+                    Lab</div>
+                  <div style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.15rem;">Physical production
+                    samples dispatched overnight.</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Quality Lab Visual -->
+          <div class="quality-img-container">
+            <img src="assets/images/sections/p16.jpg" alt="Precision Quality Lab Verification" width="600" height="440"
+              loading="lazy">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------
+         SECTION 6: FINAL QUICK ESTIMATOR CTA BAR
+         ---------------------------------------------------- -->
+    <section class="h2-quote-bar-section" id="h2-quote-bar">
+      <div class="container-custom">
+        <div class="h2-quote-box">
+          <div class="h2-quote-details">
+            <span class="section-eyebrow">Instant Estimates</span>
+            <h2>Create Your Custom Swag Collection</h2>
+            <p>Get a customized digital proof and full wholesale quote delivered within 4 business hours.</p>
+          </div>
+          <div class="h2-quote-actions">
+            <a href="contact.html#quote" class="btn-primary">
+              <span>Request Quote</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="products.html" class="btn-secondary">Download Catalog</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       SHARED FOOTER
+       ========================================== -->
+  <footer id="site-footer">
+    <div class="container-custom">
+      <div class="footer-grid">
+
+        <!-- Block 1: Brand & Socials (Top-Left) -->
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-identity">
+            <img src="assets/images/logo.png" alt="PromoCorp Logo" class="brand-logo-img" width="38" height="38">
+            <div class="brand-info">
+              <span class="brand-name">PROMO<span>CORP</span></span>
+              <span class="brand-tagline">Corporate Merchandise</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            Industry-leading manufacturer &amp; global supplier of premium branded promotional products, executive
+            gifts, custom apparel, and sustainable enterprise swag collections since 2012.
+          </p>
+
+          <!-- Social Media Icons (Reference Model) -->
+          <div class="footer-social-row">
+            <a href="https://linkedin.com" class="footer-social-btn" aria-label="LinkedIn" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://instagram.com" class="footer-social-btn" aria-label="Instagram" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://youtube.com" class="footer-social-btn" aria-label="YouTube" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+              </svg>
+            </a>
+            <a href="https://wa.me/18005557924" class="footer-social-btn" aria-label="WhatsApp" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </a>
+          </div>
+
+          <div class="footer-badges">
+            <span class="footer-badge-pill">ISO 9001 Certified</span>
+            <span class="footer-badge-pill">Eco-Friendly Sourcing</span>
+          </div>
+        </div>
+
+        <!-- Block 2: SHOP (Top-Right) -->
+        <div class="footer-col-shop">
+          <h2 class="footer-heading">SHOP</h2>
+          <ul class="footer-nav-list">
+            <li><a href="products.html#drinkware" class="footer-link">Custom Drinkware</a></li>
+            <li><a href="products.html#apparel" class="footer-link">Corporate Apparel</a></li>
+            <li><a href="products.html#tech" class="footer-link">Tech &amp; Accessories</a></li>
+            <li><a href="products.html#stationery" class="footer-link">Eco Stationery</a></li>
+            <li><a href="products.html#executive" class="footer-link">Executive Hampers</a></li>
+            <li><a href="products.html#bags" class="footer-link">Custom Bags &amp; Packs</a></li>
+            <li><a href="products.html" class="footer-link footer-link-highlight">All products &rarr;</a></li>
+          </ul>
+        </div>
+
+        <!-- Block 3: COMPANY (Bottom-Left) -->
+        <div class="footer-col-company">
+          <h2 class="footer-heading">COMPANY</h2>
+          <ul class="footer-nav-list">
+            <li><a href="about.html" class="footer-link">About us</a></li>
+            <li><a href="custom-branding.html" class="footer-link">Services</a></li>
+            <li><a href="contact.html#quote" class="footer-link">Bulk ordering</a></li>
+            <li><a href="home-2.html" class="footer-link">Swag lookbook</a></li>
+            <li><a href="contact.html" class="footer-link">Contact &amp; Support</a></li>
+            <li><a href="contact.html#quote" class="footer-link footer-link-highlight">Open an account &rarr;</a></li>
+          </ul>
+        </div>
+
+        <!-- Block 4: VISIT OR CALL (Bottom-Right) -->
+        <div class="footer-col-contact">
+          <h2 class="footer-heading">VISIT OR CALL</h2>
+          <div class="footer-contact-items-wrap">
+
+            <div class="footer-contact-item">
+              <div class="footer-icon-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="footer-contact-text">
+                <span>742 Merchandise Way, Suite 400, Industrial Park, NY 10001</span>
+              </div>
+            </div>
+
+            <div class="footer-contact-item">
+              <div class="footer-icon-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+              </div>
+              <div class="footer-contact-text">
+                <a href="tel:+18005557924" class="footer-contact-link">+1 (800) 555-SWAG (7924)</a>
+              </div>
+            </div>
+
+            <div class="footer-contact-item">
+              <div class="footer-icon-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="footer-contact-text">
+                <a href="mailto:quotes@promocorpmerch.com" class="footer-contact-link">quotes@promocorpmerch.com</a>
+              </div>
+            </div>
+
+            <div class="footer-contact-item">
+              <div class="footer-icon-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div class="footer-contact-text">
+                <div>Mon to Sat: 8:30 am to 7:00 pm</div>
+                <div class="footer-hours-closed">Sunday: closed</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 PromoCorp Global Merchandise Ltd. GSTIN 27AAKCP4417M1Z3. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="contact.html#privacy" class="footer-link">Privacy policy</a>
+          <a href="contact.html#terms" class="footer-link">Terms of sale</a>
+          <a href="contact.html#compliance" class="footer-link">Social Compliance</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       SCROLL TO TOP BUTTON
+       ========================================== -->
+  <button type="button" id="scroll-top-btn" aria-label="Scroll to top of page">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+      stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Centralized External Script (Zero Inline Script) -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

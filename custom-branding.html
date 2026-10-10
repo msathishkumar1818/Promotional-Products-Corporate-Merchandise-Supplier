@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Branding &amp; Printing Techniques | PromoCorp</title>
+  <meta name="description"
+    content="Explore enterprise custom branding methods: multi-needle embroidery, fiber laser engraving, silkscreen printing, and deep blind debossing. Precision guaranteed.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+  <!-- ==========================================
+       BRANDED PAGE LOADER
+       ========================================== -->
+  <div id="page-loader" aria-hidden="true">
+    <div class="loader-brand">
+      <div class="loader-ring"></div>
+      <img src="assets/images/logo.png" alt="PromoCorp Logo" width="58" height="58">
+    </div>
+    <div class="loader-text">Branding Studio</div>
+  </div>
+
+  <!-- ==========================================
+       FIXED COMPACT HEADER
+       ========================================== -->
+  <header id="site-header">
+    <div class="container-custom header-container">
+
+      <!-- Brand Identity -->
+      <a href="index.html" class="brand-identity" aria-label="PromoCorp Homepage">
+        <img src="assets/images/logo.png" alt="PromoCorp Logo" class="brand-logo-img" width="38" height="38">
+        <div class="brand-info">
+          <span class="brand-name">PROMO<span>CORP</span></span>
+          <span class="brand-tagline">Corporate Merchandise</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation (Exactly 6 Nav Items on One Line) -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul style="display: flex; align-items: center; gap: 0.25rem; list-style: none; margin: 0; padding: 0;">
+
+          <!-- 1. Home with Click-Only Dropdown -->
+          <li class="nav-item has-dropdown">
+            <button type="button" class="nav-link" id="home-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+              <span>Home</span>
+              <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li role="none">
+                <a href="index.html" class="dropdown-link" role="menuitem">
+                  <span>Home 1 - Corporate</span>
+                  <span class="dropdown-badge">Default</span>
+                </a>
+              </li>
+              <li role="none">
+                <a href="home-2.html" class="dropdown-link" role="menuitem">
+                  <span>Home 2 - Creative Swag</span>
+                  <span class="dropdown-badge">Studio</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- 2. Products -->
+          <li class="nav-item">
+            <a href="products.html" class="nav-link">Products</a>
+          </li>
+
+          <!-- 3. Custom Branding (Active) -->
+          <li class="nav-item">
+            <a href="custom-branding.html" class="nav-link active">Custom Branding</a>
+          </li>
+
+          <!-- 4. About (Mandatory) -->
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+
+          <!-- 5. Contact (Directly Visible) -->
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <!-- Action Controls: RTL, Dark Mode, Quote CTA Button, Mobile Hamburger -->
+      <div class="header-actions">
+
+        <!-- RTL Toggle -->
+        <button type="button" class="btn-icon rtl-toggle-btn" aria-label="Switch text direction">
+          <span class="dir-label" style="font-size: 0.72rem; font-weight: 800; letter-spacing: 0.05em;">RTL</span>
+        </button>
+
+        <!-- Dark Mode Toggle -->
+        <button type="button" class="btn-icon theme-toggle-btn" aria-label="Toggle dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <!-- Request a Quote CTA Button -->
+        <a href="contact.html#quote" class="btn-header-cta" aria-label="Request a Corporate Quote">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+          </svg>
+          <span>Request a Quote</span>
+        </a>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button type="button" class="mobile-toggle-btn" id="mobile-menu-btn" aria-label="Open mobile menu"
+          aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==========================================
+       MOBILE DRAWER NAVIGATION
+       ========================================== -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+
+    <!-- Mobile Drawer Header -->
+    <div class="mobile-drawer-header">
+      <div class="brand-identity">
+        <img src="assets/images/logo.png" alt="PromoCorp Logo" class="brand-logo-img" width="34" height="34">
+        <div class="brand-info">
+          <span class="brand-name">PROMO<span>CORP</span></span>
+          <span class="brand-tagline">Corporate Merchandise</span>
+        </div>
+      </div>
+      <button type="button" class="mobile-drawer-close" id="mobile-drawer-close" aria-label="Close mobile menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Links -->
+    <ul class="mobile-nav-list">
+
+      <!-- Home with Accordion -->
+      <li class="mobile-nav-item" id="mobile-home-accordion-item">
+        <button type="button" class="mobile-nav-link mobile-accordion-btn" id="mobile-home-accordion-btn"
+          aria-expanded="false">
+          <span>Home</span>
+          <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="mobile-accordion-content">
+          <a href="index.html" class="mobile-sub-link">Home 1 - Corporate Edition</a>
+          <a href="home-2.html" class="mobile-sub-link">Home 2 - Creative Swag Studio</a>
+        </div>
+      </li>
+
+      <li><a href="products.html" class="mobile-nav-link">Products</a></li>
+      <li><a href="custom-branding.html" class="mobile-nav-link active">Custom Branding</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+
+    </ul>
+
+    <!-- Mobile Drawer Footer -->
+    <div class="mobile-drawer-footer">
+      <a href="contact.html#quote" class="btn-header-cta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+        </svg>
+        <span>Request a Quote</span>
+      </a>
+    </div>
+
+  </aside>
+
+  <!-- ==========================================
+       MAIN CONTENT (INNER PAGE 02 - EXACTLY 5 MAIN CONTENT SECTIONS)
+       ========================================== -->
+  <main id="main-content">
+
+    <!-- ----------------------------------------------------
+         SECTION 1: BRANDING CAPABILITIES HERO STRIP
+         ---------------------------------------------------- -->
+    <section class="cb-hero-strip" id="branding-hero">
+      <!-- Hero Background Image & Atmospheric Overlay -->
+      <img src="assets/images/services/branding-hero-bg.jpg" alt="Precision Custom Merchandise Branding Studio" class="cb-hero-bg-img" loading="eager">
+      <div class="cb-hero-overlay"></div>
+
+      <div class="container-custom cb-hero-container">
+        <div class="cb-hero-content-center">
+          <span class="section-eyebrow cb-hero-eyebrow">Studio Craftsmanship</span>
+          <h1 class="section-title cb-hero-title">Precision Custom Branding &amp; Print Methods</h1>
+          <p class="section-subtitle cb-hero-subtitle">
+            Commercial-grade printing and tactile personalization engineered for brand longevity and executive presentation.
+          </p>
+          <div class="cb-hero-actions">
+            <a href="contact.html#quote" class="btn-primary">Request Virtual Mockup</a>
+          </div>
+        </div>
+
+        <!-- Centered Branding Specs Pills -->
+        <div class="cb-specs-pills">
+          <div class="cb-spec-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span>15-Color Tajima Embroidery</span>
+          </div>
+          <div class="cb-spec-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span>Sub-Millimeter Fiber Laser</span>
+          </div>
+          <div class="cb-spec-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span>80+ Wash-Cycle DTF Inks</span>
+          </div>
+          <div class="cb-spec-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span>Blind Heat Debossing</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------
+         SECTION 2: 4-METHOD DEEP-DIVE MATRIX (EVEN CARDS)
+         ---------------------------------------------------- -->
+    <section class="cb-methods-section" id="techniques-deep-dive">
+      <div class="container-custom">
+
+        <div style="text-align: center; max-width: 650px; margin: 0 auto;">
+          <span class="section-eyebrow">Execution Profiles</span>
+          <h2 class="section-title">Core Printing Technologies</h2>
+          <p class="section-subtitle" style="margin: 0 auto;">Substrate-optimized customization with commercial
+            guarantees.</p>
+        </div>
+
+        <div class="cb-methods-grid">
+
+          <!-- Method 1: Embroidery -->
+          <article class="cb-method-card" id="embroidery">
+            <div class="cb-method-img-box">
+              <img src="assets/images/services/p25.jpg" alt="Tajima Multi-Needle Embroidery" width="600" height="375"
+                loading="lazy">
+            </div>
+            <div class="cb-method-card-body">
+              <div>
+                <h3 class="cb-method-title">Tajima Precision Embroidery</h3>
+                <p class="cb-method-desc">High-density Madeira threads with 3D puff effects for structured caps, fleece,
+                  and polos.</p>
+              </div>
+              <div class="cb-method-specs-row">
+                <span>Substrates: <strong>Cotton, Fleece, Canvas</strong></span>
+                <span class="dropdown-badge">100% Wash-Proof</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Method 2: Laser Engraving -->
+          <article class="cb-method-card" id="laser">
+            <div class="cb-method-img-box">
+              <img src="assets/images/services/p26.jpg" alt="Rotary Fiber Laser Engraving" width="600" height="375"
+                loading="lazy">
+            </div>
+            <div class="cb-method-card-body">
+              <div>
+                <h3 class="cb-method-title">Fiber Laser Engraving</h3>
+                <p class="cb-method-desc">Sub-millimeter beam vaporizes coating for crisp exposed-metal contrast on
+                  drinkware and tech.</p>
+              </div>
+              <div class="cb-method-specs-row">
+                <span>Substrates: <strong>Steel, Bamboo, Glass</strong></span>
+                <span class="dropdown-badge">Permanent Depth</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Method 3: Screen Printing & DTF -->
+          <article class="cb-method-card" id="silkscreen">
+            <div class="cb-method-img-box">
+              <img src="assets/images/services/p27.jpg" alt="Silk Screen Printing Carousel Press" width="600"
+                height="375" loading="lazy">
+            </div>
+            <div class="cb-method-card-body">
+              <div>
+                <h3 class="cb-method-title">Spot Silkscreen &amp; DTF</h3>
+                <p class="cb-method-desc">Automated high-speed carousel press utilizing eco-solvent plastisol with high
+                  opacity on dark fabrics.</p>
+              </div>
+              <div class="cb-method-specs-row">
+                <span>Substrates: <strong>Tees, Hoodies, Totes</strong></span>
+                <span class="dropdown-badge">80+ Cycles Fast</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Method 4: Debossing & Foil -->
+          <article class="cb-method-card" id="debossing">
+            <div class="cb-method-img-box">
+              <img src="assets/images/services/p28.jpg" alt="Leather Blind Debossing and Stamping" width="600"
+                height="375" loading="lazy">
+            </div>
+            <div class="cb-method-card-body">
+              <div>
+                <h3 class="cb-method-title">Deep Blind Debossing</h3>
+                <p class="cb-method-desc">Heated magnesium dies create recessed tactile impressions with optional
+                  metallic foil stamping.</p>
+              </div>
+              <div class="cb-method-specs-row">
+                <span>Substrates: <strong>Leather, Seed Paper, PU</strong></span>
+                <span class="dropdown-badge">Luxury Finish</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------
+         SECTION 3: 4-STAGE PROOFING FLOW (TIMELINE)
+         ---------------------------------------------------- -->
+    <section class="cb-process-section" id="proofing-flow">
+      <div class="container-custom">
+        <div style="text-align: center; max-width: 680px; margin: 0 auto;">
+          <span class="section-eyebrow">Zero Guesswork</span>
+          <h2 class="section-title">The 4-Stage Precision Proofing Flow</h2>
+          <p class="section-subtitle" style="margin: 0 auto;">Every artwork undergoes multi-checkpoint validation before
+            machine setup.</p>
+        </div>
+
+        <div class="cb-flow-grid">
+
+          <div class="cb-flow-step">
+            <div class="cb-flow-step-num">01</div>
+            <div class="cb-flow-step-title">Vector File Audit</div>
+            <p class="cb-flow-step-desc">Vector analysis of line weights, kerning, and color separations for machine
+              compatibility.</p>
+          </div>
+
+          <div class="cb-flow-step">
+            <div class="cb-flow-step-num">02</div>
+            <div class="cb-flow-step-title">3D Photorealistic Proof</div>
+            <p class="cb-flow-step-desc">True-to-scale digital mockup displaying Pantone values, dimensions, and imprint
+              placement.</p>
+          </div>
+
+          <div class="cb-flow-step">
+            <div class="cb-flow-step-num">03</div>
+            <div class="cb-flow-step-title">Pre-Production Sample</div>
+            <p class="cb-flow-step-desc">Physical strike-off sample photographed or couriered for final corporate
+              sign-off.</p>
+          </div>
+
+          <div class="cb-flow-step">
+            <div class="cb-flow-step-num">04</div>
+            <div class="cb-flow-step-title">Automated Batch Run</div>
+            <p class="cb-flow-step-desc">High-speed production run verified with optical camera inspection and count
+              verification.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------
+         SECTION 4: PANTONE EXACT MATCH LAB
+         ---------------------------------------------------- -->
+    <section class="cb-color-lab-section" id="pantone-matching">
+      <div class="container-custom">
+        <div class="cb-lab-grid">
+
+          <div>
+            <span class="section-eyebrow">Color Calibration</span>
+            <h2 class="section-title">Pantone Matching System (PMS) Standards</h2>
+            <p class="section-subtitle">
+              We calibrate all inks, threads, and laser pulses against the official Pantone Matching System.
+            </p>
+
+            <div class="cb-lab-metrics-list">
+
+              <div class="cb-lab-metric-card">
+                <div class="cb-lab-metric-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div style="font-weight: 700; color: var(--text-main); font-size: 0.95rem;">Delta-E &lt; 0.8 Tolerance
+                  </div>
+                  <div style="font-size: 0.82rem; color: var(--text-dim); margin-top: 0.15rem;">
+                    Spectrophotometer-verified color consistency across re-orders.</div>
+                </div>
+              </div>
+
+              <div class="cb-lab-metric-card">
+                <div class="cb-lab-metric-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div style="font-weight: 700; color: var(--text-main); font-size: 0.95rem;">OEKO-TEX Standard 100
+                  </div>
+                  <div style="font-size: 0.82rem; color: var(--text-dim); margin-top: 0.15rem;">Eco-certified embroidery
+                    threads free of harmful azo dyes.</div>
+                </div>
+              </div>
+
+              <div class="cb-lab-metric-card">
+                <div class="cb-lab-metric-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div style="font-weight: 700; color: var(--text-main); font-size: 0.95rem;">Automated Recipe Mixing
+                  </div>
+                  <div style="font-size: 0.82rem; color: var(--text-dim); margin-top: 0.15rem;">Gram-accurate ink
+                    dispensing for spot-color precision.</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Color Lab Visual -->
+          <div class="cb-lab-visual">
+            <img src="assets/images/services/pantone-color-swatches.jpg" alt="Pantone Color Matching Tools and Swatches"
+              width="600" height="440" loading="lazy">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------
+         SECTION 5: FINAL VIRTUAL 3D PROOF CTA
+         ---------------------------------------------------- -->
+    <section class="cb-cta-section" id="branding-cta">
+      <div class="container-custom">
+        <div class="cb-proof-card">
+
+          <div class="cb-proof-visual">
+            <img src="assets/images/services/p29.jpg" alt="Digital 3D Virtual Proofing Studio" width="600" height="420"
+              loading="lazy">
+          </div>
+
+          <div class="cb-proof-content">
+            <span class="section-eyebrow">Rapid Virtual Proof</span>
+            <h2 class="section-title">Free 3D Proof in Under 2 Hours</h2>
+            <p class="section-subtitle" style="margin-bottom: 2rem;">
+              Send us your vector logo and our branding specialists will prepare realistic 3D mockups across your choice
+              of 3 corporate products.
+            </p>
+            <div class="btn-group-pair">
+              <a href="contact.html#quote" class="btn-primary">Upload Logo &amp; Get Proof</a>
+              <a href="products.html" class="btn-secondary">Explore Product Range</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       SHARED FOOTER
+       ========================================== -->
+  <footer id="site-footer">
+    <div class="container-custom">
+      <div class="footer-grid">
+
+        <!-- Block 1: Brand & Socials (Top-Left) -->
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-identity">
+            <img src="assets/images/logo.png" alt="PromoCorp Logo" class="brand-logo-img" width="38" height="38">
+            <div class="brand-info">
+              <span class="brand-name">PROMO<span>CORP</span></span>
+              <span class="brand-tagline">Corporate Merchandise</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            Industry-leading manufacturer &amp; global supplier of premium branded promotional products, executive
+            gifts, custom apparel, and sustainable enterprise swag collections since 2012.
+          </p>
+
+          <!-- Social Media Icons (Reference Model) -->
+          <div class="footer-social-row">
+            <a href="https://linkedin.com" class="footer-social-btn" aria-label="LinkedIn" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://instagram.com" class="footer-social-btn" aria-label="Instagram" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://youtube.com" class="footer-social-btn" aria-label="YouTube" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+              </svg>
+            </a>
+            <a href="https://wa.me/18005557924" class="footer-social-btn" aria-label="WhatsApp" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </a>
+          </div>
+
+          <div class="footer-badges">
+            <span class="footer-badge-pill">ISO 9001 Certified</span>
+            <span class="footer-badge-pill">Eco-Friendly Sourcing</span>
+          </div>
+        </div>
+
+        <!-- Block 2: SHOP (Top-Right) -->
+        <div class="footer-col-shop">
+          <h2 class="footer-heading">SHOP</h2>
+          <ul class="footer-nav-list">
+            <li><a href="products.html#drinkware" class="footer-link">Custom Drinkware</a></li>
+            <li><a href="products.html#apparel" class="footer-link">Corporate Apparel</a></li>
+            <li><a href="products.html#tech" class="footer-link">Tech &amp; Accessories</a></li>
+            <li><a href="products.html#stationery" class="footer-link">Eco Stationery</a></li>
+            <li><a href="products.html#executive" class="footer-link">Executive Hampers</a></li>
+            <li><a href="products.html#bags" class="footer-link">Custom Bags &amp; Packs</a></li>
+            <li><a href="products.html" class="footer-link footer-link-highlight">All products &rarr;</a></li>
+          </ul>
+        </div>
+
+        <!-- Block 3: COMPANY (Bottom-Left) -->
+        <div class="footer-col-company">
+          <h2 class="footer-heading">COMPANY</h2>
+          <ul class="footer-nav-list">
+            <li><a href="about.html" class="footer-link">About us</a></li>
+            <li><a href="custom-branding.html" class="footer-link">Services</a></li>
+            <li><a href="contact.html#quote" class="footer-link">Bulk ordering</a></li>
+            <li><a href="home-2.html" class="footer-link">Swag lookbook</a></li>
+            <li><a href="contact.html" class="footer-link">Contact &amp; Support</a></li>
+            <li><a href="contact.html#quote" class="footer-link footer-link-highlight">Open an account &rarr;</a></li>
+          </ul>
+        </div>
+
+        <!-- Block 4: VISIT OR CALL (Bottom-Right) -->
+        <div class="footer-col-contact">
+          <h2 class="footer-heading">VISIT OR CALL</h2>
+          <div class="footer-contact-items-wrap">
+
+            <div class="footer-contact-item">
+              <div class="footer-icon-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="footer-contact-text">
+                <span>742 Merchandise Way, Suite 400, Industrial Park, NY 10001</span>
+              </div>
+            </div>
+
+            <div class="footer-contact-item">
+              <div class="footer-icon-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+              </div>
+              <div class="footer-contact-text">
+                <a href="tel:+18005557924" class="footer-contact-link">+1 (800) 555-SWAG (7924)</a>
+              </div>
+            </div>
+
+            <div class="footer-contact-item">
+              <div class="footer-icon-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="footer-contact-text">
+                <a href="mailto:quotes@promocorpmerch.com" class="footer-contact-link">quotes@promocorpmerch.com</a>
+              </div>
+            </div>
+
+            <div class="footer-contact-item">
+              <div class="footer-icon-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div class="footer-contact-text">
+                <div>Mon to Sat: 8:30 am to 7:00 pm</div>
+                <div class="footer-hours-closed">Sunday: closed</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 PromoCorp Global Merchandise Ltd. GSTIN 27AAKCP4417M1Z3. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="contact.html#privacy" class="footer-link">Privacy policy</a>
+          <a href="contact.html#terms" class="footer-link">Terms of sale</a>
+          <a href="contact.html#compliance" class="footer-link">Social Compliance</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       SCROLL TO TOP BUTTON
+       ========================================== -->
+  <button type="button" id="scroll-top-btn" aria-label="Scroll to top of page">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+      stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Centralized External Script (Zero Inline Script) -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

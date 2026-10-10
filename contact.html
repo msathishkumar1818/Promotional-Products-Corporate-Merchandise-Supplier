@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Instant Quotation | PromoCorp Merchandise</title>
+  <meta name="description"
+    content="Request corporate merchandise quotes, interactive brand specifications, explore our global distribution hubs, and view our live logistics location on Google Maps.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+  <!-- ==========================================
+       BRANDED PAGE LOADER
+       ========================================== -->
+  <div id="page-loader" aria-hidden="true">
+    <div class="loader-brand">
+      <div class="loader-ring"></div>
+      <img src="assets/images/logo.png" alt="PromoCorp Logo" width="58" height="58">
+    </div>
+    <div class="loader-text">Quotation &amp; Contact Desk</div>
+  </div>
+
+  <!-- ==========================================
+       FIXED COMPACT HEADER
+       ========================================== -->
+  <header id="site-header">
+    <div class="container-custom header-container">
+
+      <!-- Brand Identity -->
+      <a href="index.html" class="brand-identity" aria-label="PromoCorp Homepage">
+        <img src="assets/images/logo.png" alt="PromoCorp Logo" class="brand-logo-img" width="38" height="38">
+        <div class="brand-info">
+          <span class="brand-name">PROMO<span>CORP</span></span>
+          <span class="brand-tagline">Corporate Merchandise</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation (5 Primary Nav Items on One Line) -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul style="display: flex; align-items: center; gap: 0.25rem; list-style: none; margin: 0; padding: 0;">
+
+          <!-- 1. Home with Click-Only Dropdown -->
+          <li class="nav-item has-dropdown">
+            <button type="button" class="nav-link" id="home-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+              <span>Home</span>
+              <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li role="none">
+                <a href="index.html" class="dropdown-link" role="menuitem">
+                  <span>Home 1 - Corporate</span>
+                  <span class="dropdown-badge">Default</span>
+                </a>
+              </li>
+              <li role="none">
+                <a href="home-2.html" class="dropdown-link" role="menuitem">
+                  <span>Home 2 - Creative Swag</span>
+                  <span class="dropdown-badge">Studio</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- 2. Products -->
+          <li class="nav-item">
+            <a href="products.html" class="nav-link">Products</a>
+          </li>
+
+          <!-- 3. Custom Branding -->
+          <li class="nav-item">
+            <a href="custom-branding.html" class="nav-link">Custom Branding</a>
+          </li>
+
+          <!-- 4. About -->
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+
+          <!-- 5. Contact (Active) -->
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link active">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <!-- Action Controls: RTL, Dark Mode, Quote CTA Button, Mobile Hamburger -->
+      <div class="header-actions">
+
+        <!-- RTL Toggle -->
+        <button type="button" class="btn-icon rtl-toggle-btn" aria-label="Switch text direction">
+          <span class="dir-label" style="font-size: 0.72rem; font-weight: 800; letter-spacing: 0.05em;">RTL</span>
+        </button>
+
+        <!-- Dark Mode Toggle -->
+        <button type="button" class="btn-icon theme-toggle-btn" aria-label="Toggle dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <!-- Request a Quote CTA Button -->
+        <a href="#quote" class="btn-header-cta" aria-label="Request a Corporate Quote">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+          </svg>
+          <span>Request a Quote</span>
+        </a>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button type="button" class="mobile-toggle-btn" id="mobile-menu-btn" aria-label="Open mobile menu"
+          aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==========================================
+       MOBILE DRAWER NAVIGATION
+       ========================================== -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+
+    <!-- Mobile Drawer Header -->
+    <div class="mobile-drawer-header">
+      <div class="brand-identity">
+        <img src="assets/images/logo.png" alt="PromoCorp Logo" class="brand-logo-img" width="34" height="34">
+        <div class="brand-info">
+          <span class="brand-name">PROMO<span>CORP</span></span>
+          <span class="brand-tagline">Corporate Merchandise</span>
+        </div>
+      </div>
+      <button type="button" class="mobile-drawer-close" id="mobile-drawer-close" aria-label="Close mobile menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Links -->
+    <ul class="mobile-nav-list">
+
+      <!-- Home with Accordion -->
+      <li class="mobile-nav-item" id="mobile-home-accordion-item">
+        <button type="button" class="mobile-nav-link mobile-accordion-btn" id="mobile-home-accordion-btn"
+          aria-expanded="false">
+          <span>Home</span>
+          <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="mobile-accordion-content">
+          <a href="index.html" class="mobile-sub-link">Home 1 - Corporate Edition</a>
+          <a href="home-2.html" class="mobile-sub-link">Home 2 - Creative Swag Studio</a>
+        </div>
+      </li>
+
+      <li><a href="products.html" class="mobile-nav-link">Products</a></li>
+      <li><a href="custom-branding.html" class="mobile-nav-link">Custom Branding</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About</a></li>
+      <li><a href="contact.html" class="mobile-nav-link active">Contact</a></li>
+
+    </ul>
+
+    <!-- Mobile Drawer Footer -->
+    <div class="mobile-drawer-footer">
+      <a href="#quote" class="btn-header-cta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+        </svg>
+        <span>Request a Quote</span>
+      </a>
+    </div>
+
+  </aside>
+
+  <!-- ==========================================
+       MAIN CONTENT (CONTACT & QUOTATION PAGE)
+       ========================================== -->
+  <main id="main-content">
+
+    <!-- ----------------------------------------------------
+         SECTION 1: HERO SECTION
+         ---------------------------------------------------- -->
+    <section class="contact-hero-billboard" id="contact-overview">
+      <!-- Hero Background Image & Atmospheric Overlay -->
+      <img src="assets/images/contact/contact-hero.jpg" alt="PromoCorp Consultation Showroom and Client Desk"
+        class="contact-hero-bg-img" loading="eager">
+      <div class="contact-hero-overlay"></div>
+
+      <div class="container-custom contact-hero-container">
+        <div class="contact-hero-content-center">
+          <span class="section-eyebrow contact-hero-eyebrow">Enterprise Procurement Desk</span>
+          <h1 class="section-title contact-hero-title">Connect With Our Corporate Merchandise Team</h1>
+          <p class="section-subtitle contact-hero-subtitle">
+            Guaranteed 2-hour virtual 3D mockups, physical sample dispatches, and direct wholesale pricing.
+          </p>
+          <div class="contact-hero-actions">
+            <a href="#quote" class="btn-primary">Instant Quote Form</a>
+            <div class="contact-sla-badge">
+              <span class="sla-dot"></span>
+              <span>Hotline: +1 (800) 555-SWAG</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Quick Guarantee Badges (Centered) -->
+        <div class="contact-hero-features-row">
+          <div class="contact-hero-feature-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <div>
+              <strong>2-Hour Proof SLA</strong>
+              <span>Digital vector mockups</span>
+            </div>
+          </div>
+
+          <div class="contact-hero-feature-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <div>
+              <strong>Pantone Guaranteed</strong>
+              <span>Delta-E &lt; 0.8 precision</span>
+            </div>
+          </div>
+
+          <div class="contact-hero-feature-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="1" y="3" width="15" height="13"></rect>
+              <polygon points="16 8 20 8 23 11 23 16 16 16 8"></polygon>
+              <circle cx="5.5" cy="18.5" r="2.5"></circle>
+              <circle cx="18.5" cy="18.5" r="2.5"></circle>
+            </svg>
+            <div>
+              <strong>Global Direct Dispatch</strong>
+              <span>45+ country door freight</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------
+         SECTION 2: INTERACTIVE QUOTATION FORM (#quote)
+         ---------------------------------------------------- -->
+    <section class="quote-studio-section" id="quote">
+      <div class="container-custom">
+
+        <div class="quote-studio-grid">
+
+          <!-- Left Column: The Quotation Builder Form -->
+          <div class="quote-form-container">
+            <div class="quote-form-header">
+              <span class="section-eyebrow">Instant Quote Request</span>
+              <h2 style="font-size: 1.6rem; font-weight: 800; color: var(--text-main); margin-bottom: 0.35rem;">
+                Configure Your Merchandise Run
+              </h2>
+              <p style="font-size: 0.88rem; color: var(--text-dim); margin-bottom: 1.5rem;">
+                Receive line-item wholesale pricing and virtual 3D mockups within 2 hours.
+              </p>
+            </div>
+
+            <form class="quote-interactive-form" action="#" method="POST" id="corporate-quote-form">
+
+              <!-- Category Step -->
+              <div class="form-group-block">
+                <label class="form-block-label">1. Select Product Category</label>
+                <div class="quote-pill-options" role="radiogroup" aria-label="Select Category">
+                  <label class="quote-pill-opt">
+                    <input type="radio" name="product_cat" value="drinkware" checked>
+                    <span>Drinkware</span>
+                  </label>
+                  <label class="quote-pill-opt">
+                    <input type="radio" name="product_cat" value="apparel">
+                    <span>Apparel</span>
+                  </label>
+                  <label class="quote-pill-opt">
+                    <input type="radio" name="product_cat" value="tech">
+                    <span>Smart Tech</span>
+                  </label>
+                  <label class="quote-pill-opt">
+                    <input type="radio" name="product_cat" value="stationery">
+                    <span>Eco Stationery</span>
+                  </label>
+                  <label class="quote-pill-opt">
+                    <input type="radio" name="product_cat" value="bags">
+                    <span>Bags &amp; Packs</span>
+                  </label>
+                  <label class="quote-pill-opt">
+                    <input type="radio" name="product_cat" value="curated_kit">
+                    <span>VIP Gift Kit</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Quantity Tier -->
+              <div class="form-group-block">
+                <label class="form-block-label">2. Target Volume / Quantity</label>
+                <div class="quote-pill-options" role="radiogroup" aria-label="Select Quantity Tier">
+                  <label class="quote-pill-opt">
+                    <input type="radio" name="order_qty" value="50_250" checked>
+                    <span>50 – 250 units</span>
+                  </label>
+                  <label class="quote-pill-opt">
+                    <input type="radio" name="order_qty" value="250_1000">
+                    <span>250 – 1,000 units</span>
+                  </label>
+                  <label class="quote-pill-opt">
+                    <input type="radio" name="order_qty" value="1000_5000">
+                    <span>1,000 – 5,000 units</span>
+                  </label>
+                  <label class="quote-pill-opt">
+                    <input type="radio" name="order_qty" value="5000_plus">
+                    <span>5,000+ Enterprise</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Branding Method & Target Date -->
+              <div class="form-row-2col">
+                <div class="form-field-unit">
+                  <label for="branding-technique" class="form-field-label">Branding Technique</label>
+                  <select id="branding-technique" name="branding_technique" class="form-select-custom">
+                    <option value="laser">Fiber Laser Precision Engraving</option>
+                    <option value="embroidery">High-Density 3D Embroidery</option>
+                    <option value="silkscreen">Multi-Color Screen Printing / DTF</option>
+                    <option value="deboss">Blind Debossing &amp; Metallic Foil</option>
+                    <option value="expert_recommendation">Recommend Best Technique for SKU</option>
+                  </select>
+                </div>
+
+                <div class="form-field-unit">
+                  <label for="target-delivery-date" class="form-field-label">Target Delivery Date</label>
+                  <input type="date" id="target-delivery-date" name="delivery_date" class="form-input-custom">
+                </div>
+              </div>
+
+              <!-- Artwork Upload Dropzone -->
+              <div class="form-group-block">
+                <label class="form-block-label">3. Upload Brand Logo / Vector Artwork (Optional)</label>
+                <div class="artwork-dropzone" id="artwork-upload-zone">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round"
+                    style="color: var(--color-accent); margin-bottom: 0.5rem;">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="17 8 12 3 7 8"></polyline>
+                    <line x1="12" y1="3" x2="12" y2="15"></line>
+                  </svg>
+                  <span style="font-size: 0.88rem; font-weight: 700; color: var(--text-main); display: block;">Drag
+                    &amp; drop artwork file or click to browse</span>
+                  <span
+                    style="font-size: 0.74rem; color: var(--text-dim); display: block; margin-top: 0.25rem;">Supported:
+                    AI, EPS, SVG, PDF, PNG (Max 50MB)</span>
+                  <input type="file" id="artwork-file-input" name="artwork_file"
+                    style="position: absolute; opacity: 0; width: 100%; height: 100%; top: 0; left: 0; cursor: pointer;"
+                    aria-label="Upload logo artwork file">
+                </div>
+              </div>
+
+              <!-- Contact Particulars -->
+              <div class="form-row-2col">
+                <div class="form-field-unit">
+                  <label for="contact-name" class="form-field-label">Full Name *</label>
+                  <input type="text" id="contact-name" name="name" class="form-input-custom" placeholder="Elena Vance"
+                    required>
+                </div>
+                <div class="form-field-unit">
+                  <label for="contact-email" class="form-field-label">Corporate Email *</label>
+                  <input type="email" id="contact-email" name="email" class="form-input-custom"
+                    placeholder="elena@company.com" required>
+                </div>
+              </div>
+
+              <div class="form-row-2col">
+                <div class="form-field-unit">
+                  <label for="contact-company" class="form-field-label">Company Name *</label>
+                  <input type="text" id="contact-company" name="company" class="form-input-custom"
+                    placeholder="Meridian Technologies Ltd" required>
+                </div>
+                <div class="form-field-unit">
+                  <label for="contact-phone" class="form-field-label">Direct Phone *</label>
+                  <input type="tel" id="contact-phone" name="phone" class="form-input-custom"
+                    placeholder="+1 (555) 019-2834" required>
+                </div>
+              </div>
+
+              <!-- Submit Action Button -->
+              <div style="margin-top: 1.5rem;">
+                <button type="submit" class="btn-primary"
+                  style="width: 100%; justify-content: center; padding: 0.9rem 1.5rem; font-size: 0.98rem;">
+                  <span>Submit Specification &amp; Receive Quote</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                    stroke-linejoin="round" width="18" height="18">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+              </div>
+
+            </form>
+          </div>
+
+          <!-- Right Column: Live Guarantee & Proofing Card -->
+          <div class="quote-guarantee-card">
+
+            <div class="quote-guarantee-media">
+              <img src="assets/images/services/virtual-proof-mockup.jpg" alt="Virtual 3D Proof Mockup Preview"
+                width="560" height="360" loading="lazy">
+              <div class="quote-badge-tag">Guaranteed Proof SLA</div>
+            </div>
+
+            <div class="quote-guarantee-content">
+              <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--text-main); margin-bottom: 0.4rem;">
+                Enterprise Procurement Standards
+              </h3>
+              <p style="font-size: 0.84rem; color: var(--text-dim); line-height: 1.5; margin-bottom: 1.25rem;">
+                Every order is backed by strict ISO 9001 quality audits, certified Pantone PMS color verification, and
+                zero unexpected customs fees.
+              </p>
+
+              <!-- Even Guarantee Checklist -->
+              <div class="guarantee-specs-list">
+
+                <div class="guarantee-spec-item">
+                  <div class="guarantee-spec-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <div>
+                    <strong style="display: block; font-size: 0.88rem; color: var(--text-main);">Free Virtual 3D
+                      Proofs</strong>
+                    <span style="font-size: 0.78rem; color: var(--text-dim);">Rotatable photorealistic digital proof
+                      sent in 2 hours</span>
+                  </div>
+                </div>
+
+                <div class="guarantee-spec-item">
+                  <div class="guarantee-spec-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <div>
+                    <strong style="display: block; font-size: 0.88rem; color: var(--text-main);">Pre-Production Physical
+                      Sample</strong>
+                    <span style="font-size: 0.78rem; color: var(--text-dim);">Inspect the physical finished item prior
+                      to mass run</span>
+                  </div>
+                </div>
+
+                <div class="guarantee-spec-item">
+                  <div class="guarantee-spec-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <div>
+                    <strong style="display: block; font-size: 0.88rem; color: var(--text-main);">Enterprise Account
+                      Executive</strong>
+                    <span style="font-size: 0.78rem; color: var(--text-dim);">Single point of contact for end-to-end
+                      logistics coordination</span>
+                  </div>
+                </div>
+
+                <div class="guarantee-spec-item">
+                  <div class="guarantee-spec-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <div>
+                    <strong style="display: block; font-size: 0.88rem; color: var(--text-main);">Global Direct
+                      Drop-Shipping</strong>
+                    <span style="font-size: 0.78rem; color: var(--text-dim);">Multi-destination split delivery directly
+                      to recipient desks</span>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Quick Contacts Box -->
+              <div class="quote-contact-direct-box">
+                <div>
+                  <span
+                    style="display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 800; color: var(--color-accent);">Direct
+                    Dispatch Line</span>
+                  <a href="tel:+18005557924"
+                    style="font-size: 1rem; font-weight: 800; color: var(--text-main); text-decoration: none;">+1 (800)
+                    555-SWAG</a>
+                </div>
+                <div style="text-align: right;">
+                  <span
+                    style="display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 800; color: var(--color-accent);">Priority
+                    Email</span>
+                  <a href="mailto:quotes@promocorpmerch.com"
+                    style="font-size: 0.86rem; font-weight: 700; color: var(--text-main); text-decoration: none;">quotes@promocorp.com</a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------
+         SECTION 3: GLOBAL HEADQUARTERS & DISTRIBUTION HUBS
+         ---------------------------------------------------- -->
+    <section class="hubs-section" id="global-hubs">
+      <div class="container-custom">
+
+        <div class="section-header-centered">
+          <span class="section-eyebrow">Strategic Dispatch Network</span>
+          <h2 class="section-title">Global Fulfillment Centers</h2>
+          <p class="section-subtitle">
+            Local warehousing, fast production lines, and regional customs clearance across 3 continents.
+          </p>
+        </div>
+
+        <!-- 3 Mathematically Even Cards -->
+        <div class="hubs-grid-3">
+
+          <!-- Hub 1: North America HQ -->
+          <article class="hub-card">
+            <div class="hub-img-box">
+              <img src="assets/images/about/about-headquarters.jpg" alt="New York Corporate Headquarters" width="400"
+                height="280" loading="lazy">
+              <span class="hub-status-pill">Active Dispatch</span>
+            </div>
+            <div class="hub-card-body">
+              <div class="hub-card-top">
+                <span class="hub-region-tag">Americas Flagship</span>
+                <h3 class="hub-city-name">New York, USA</h3>
+                <p class="hub-address">742 Merchandise Way, Suite 400, Industrial Park, NY 10001</p>
+              </div>
+
+              <div class="hub-metrics-row">
+                <div class="hub-metric-item">
+                  <span class="hub-metric-num">12,000</span>
+                  <span class="hub-metric-lbl">Daily Units</span>
+                </div>
+                <div class="hub-metric-item">
+                  <span class="hub-metric-num">24h</span>
+                  <span class="hub-metric-lbl">Express Run</span>
+                </div>
+              </div>
+
+              <div class="hub-card-bottom">
+                <a href="tel:+18005557924" class="hub-contact-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                  </svg>
+                  <span>+1 (800) 555-SWAG</span>
+                </a>
+                <span class="hub-time-status">08:00 – 20:00 EST</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Hub 2: EMEA Hub London -->
+          <article class="hub-card">
+            <div class="hub-img-box">
+              <img src="assets/images/contact/hub-london.jpg" alt="London Canary Wharf Distribution Hub" width="400"
+                height="280" loading="lazy">
+              <span class="hub-status-pill">Active Dispatch</span>
+            </div>
+            <div class="hub-card-body">
+              <div class="hub-card-top">
+                <span class="hub-region-tag">EMEA Central Hub</span>
+                <h3 class="hub-city-name">London, UK</h3>
+                <p class="hub-address">28 Riverside Wharf, Bankside District, London EC4R 3TD</p>
+              </div>
+
+              <div class="hub-metrics-row">
+                <div class="hub-metric-item">
+                  <span class="hub-metric-num">8,500</span>
+                  <span class="hub-metric-lbl">Daily Units</span>
+                </div>
+                <div class="hub-metric-item">
+                  <span class="hub-metric-num">48h</span>
+                  <span class="hub-metric-lbl">EU Express</span>
+                </div>
+              </div>
+
+              <div class="hub-card-bottom">
+                <a href="tel:+442079460192" class="hub-contact-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                  </svg>
+                  <span>+44 20 7946 0192</span>
+                </a>
+                <span class="hub-time-status">08:30 – 18:30 GMT</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Hub 3: APAC Hub Singapore -->
+          <article class="hub-card">
+            <div class="hub-img-box">
+              <img src="assets/images/contact/hub-singapore.jpg" alt="Singapore Marina Logistics Center" width="400"
+                height="280" loading="lazy">
+              <span class="hub-status-pill">Active Dispatch</span>
+            </div>
+            <div class="hub-card-body">
+              <div class="hub-card-top">
+                <span class="hub-region-tag">APAC Gateway</span>
+                <h3 class="hub-city-name">Singapore</h3>
+                <p class="hub-address">14 Marina Logistics Boulevard, Tower 2, Singapore 018981</p>
+              </div>
+
+              <div class="hub-metrics-row">
+                <div class="hub-metric-item">
+                  <span class="hub-metric-num">10,000</span>
+                  <span class="hub-metric-lbl">Daily Units</span>
+                </div>
+                <div class="hub-metric-item">
+                  <span class="hub-metric-num">36h</span>
+                  <span class="hub-metric-lbl">APAC Direct</span>
+                </div>
+              </div>
+
+              <div class="hub-card-bottom">
+                <a href="tel:+6567123984" class="hub-contact-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                  </svg>
+                  <span>+65 6712 3984</span>
+                </a>
+                <span class="hub-time-status">09:00 – 19:00 SGT</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------
+         SECTION 4: GOOGLE LIVE MAP
+         ---------------------------------------------------- -->
+    <section class="live-map-section" id="live-map">
+      <div class="container-custom">
+
+        <div class="map-wrapper-card">
+
+          <!-- Map Header Info Bar -->
+          <div class="map-header-bar">
+            <div class="map-header-info">
+              <div class="map-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <h3 class="map-header-title">PromoCorp Americas Headquarters &amp; Print Facility</h3>
+                <p class="map-header-address">742 Merchandise Way, Industrial Park, New York, NY 10001</p>
+              </div>
+            </div>
+
+            <div class="map-badge-status">
+              <span class="sla-dot"></span>
+              <span>Active Dispatch Hub • Open Today 08:00 – 20:00 EST</span>
+            </div>
+          </div>
+
+          <!-- Interactive Google Live Map Embed -->
+          <div class="map-iframe-container">
+            <iframe class="google-map-iframe"
+              src="https://maps.google.com/maps?q=742%20Merchandise%20Way%2C%20New%20York%2C%20NY%2010001&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+              title="PromoCorp Headquarters Google Live Map" loading="lazy" allowfullscreen=""
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+          <!-- Map Info Footer Bar -->
+          <div class="map-footer-strip">
+
+            <div class="map-footer-col">
+              <span class="map-col-label">Direct Freight Desk</span>
+              <span class="map-col-val">+1 (800) 555-SWAG</span>
+            </div>
+
+            <div class="map-footer-col">
+              <span class="map-col-label">Loading Dock Hours</span>
+              <span class="map-col-val">Mon – Fri: 06:00 – 22:00 EST</span>
+            </div>
+
+            <div class="map-footer-col">
+              <span class="map-col-label">Customs Clearance</span>
+              <span class="map-col-val">Direct Express Clearance</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------
+         SECTION 5: HIGH-CONVERSION FINAL CTA SECTION
+         ---------------------------------------------------- -->
+    <section class="contact-cta-section" id="contact-final-cta">
+      <div class="container-custom">
+        <div class="contact-cta-card">
+
+          <div class="contact-cta-body">
+            <span class="section-eyebrow" style="color: var(--color-accent); font-weight: 800;">Dedicated Support</span>
+            <h2 style="font-size: 2.2rem; font-weight: 800; color: #ffffff; margin-bottom: 0.5rem; line-height: 1.25;">
+              Need an Urgent 24-Hour Production Run?
+            </h2>
+            <p style="font-size: 0.95rem; color: #f1f5f9; max-width: 620px; margin-bottom: 1.75rem; line-height: 1.5;">
+              Speak directly with a senior promotional product director. We expedite rush production for upcoming
+              summits, brand launches, and trade expos.
+            </p>
+
+            <div class="cta-btn-group">
+              <a href="tel:+18005557924" class="btn-cta-white">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                  stroke-linejoin="round" width="18" height="18">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+                <span>emergency call</span>
+              </a>
+              <a href="#quote" class="btn-cta-outline">
+                <span>Configure Order </span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                  stroke-linejoin="round" width="18" height="18">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       SHARED FOOTER
+       ========================================== -->
+  <footer id="site-footer">
+    <div class="container-custom">
+      <div class="footer-grid">
+
+        <!-- Block 1: Brand & Socials (Top-Left) -->
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-identity">
+            <img src="assets/images/logo.png" alt="PromoCorp Logo" class="brand-logo-img" width="38" height="38">
+            <div class="brand-info">
+              <span class="brand-name">PROMO<span>CORP</span></span>
+              <span class="brand-tagline">Corporate Merchandise</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            Industry-leading manufacturer &amp; global supplier of premium branded promotional products, executive
+            gifts, custom apparel, and sustainable enterprise swag collections since 2012.
+          </p>
+
+          <!-- Social Media Icons (Reference Model) -->
+          <div class="footer-social-row">
+            <a href="https://linkedin.com" class="footer-social-btn" aria-label="LinkedIn" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://instagram.com" class="footer-social-btn" aria-label="Instagram" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://youtube.com" class="footer-social-btn" aria-label="YouTube" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+              </svg>
+            </a>
+            <a href="https://wa.me/18005557924" class="footer-social-btn" aria-label="WhatsApp" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </a>
+          </div>
+
+          <div class="footer-badges">
+            <span class="footer-badge-pill">ISO 9001 Certified</span>
+            <span class="footer-badge-pill">Eco-Friendly Sourcing</span>
+          </div>
+        </div>
+
+        <!-- Block 2: SHOP (Top-Right) -->
+        <div class="footer-col-shop">
+          <h2 class="footer-heading">SHOP</h2>
+          <ul class="footer-nav-list">
+            <li><a href="products.html#drinkware" class="footer-link">Custom Drinkware</a></li>
+            <li><a href="products.html#apparel" class="footer-link">Corporate Apparel</a></li>
+            <li><a href="products.html#tech" class="footer-link">Tech &amp; Accessories</a></li>
+            <li><a href="products.html#stationery" class="footer-link">Eco Stationery</a></li>
+            <li><a href="products.html#executive" class="footer-link">Executive Hampers</a></li>
+            <li><a href="products.html#bags" class="footer-link">Custom Bags &amp; Packs</a></li>
+            <li><a href="products.html" class="footer-link footer-link-highlight">All products &rarr;</a></li>
+          </ul>
+        </div>
+
+        <!-- Block 3: COMPANY (Bottom-Left) -->
+        <div class="footer-col-company">
+          <h2 class="footer-heading">COMPANY</h2>
+          <ul class="footer-nav-list">
+            <li><a href="about.html" class="footer-link">About us</a></li>
+            <li><a href="custom-branding.html" class="footer-link">Services</a></li>
+            <li><a href="contact.html#quote" class="footer-link">Bulk ordering</a></li>
+            <li><a href="home-2.html" class="footer-link">Swag lookbook</a></li>
+            <li><a href="contact.html" class="footer-link">Contact &amp; Support</a></li>
+            <li><a href="contact.html#quote" class="footer-link footer-link-highlight">Open an account &rarr;</a></li>
+          </ul>
+        </div>
+
+        <!-- Block 4: VISIT OR CALL (Bottom-Right) -->
+        <div class="footer-col-contact">
+          <h2 class="footer-heading">VISIT OR CALL</h2>
+          <div class="footer-contact-items-wrap">
+
+            <div class="footer-contact-item">
+              <div class="footer-icon-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="footer-contact-text">
+                <span>742 Merchandise Way, Suite 400, Industrial Park, NY 10001</span>
+              </div>
+            </div>
+
+            <div class="footer-contact-item">
+              <div class="footer-icon-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+              </div>
+              <div class="footer-contact-text">
+                <a href="tel:+18005557924" class="footer-contact-link">+1 (800) 555-SWAG (7924)</a>
+              </div>
+            </div>
+
+            <div class="footer-contact-item">
+              <div class="footer-icon-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="footer-contact-text">
+                <a href="mailto:quotes@promocorpmerch.com" class="footer-contact-link">quotes@promocorpmerch.com</a>
+              </div>
+            </div>
+
+            <div class="footer-contact-item">
+              <div class="footer-icon-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div class="footer-contact-text">
+                <div>Mon to Sat: 8:30 am to 7:00 pm</div>
+                <div class="footer-hours-closed">Sunday: closed</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 PromoCorp Global Merchandise Ltd. GSTIN 27AAKCP4417M1Z3. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="contact.html#privacy" class="footer-link">Privacy policy</a>
+          <a href="contact.html#terms" class="footer-link">Terms of sale</a>
+          <a href="contact.html#compliance" class="footer-link">Social Compliance</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       SCROLL TO TOP BUTTON
+       ========================================== -->
+  <button type="button" id="scroll-top-btn" aria-label="Scroll to top of page">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+      stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Centralized External Script (Zero Inline Script) -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
