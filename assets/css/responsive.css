@@ -49,6 +49,10 @@
     display: none !important;
   }
 
+}
+
+/* Tablet Grids for iPad Pro 13, iPad Pro, iPad Mini, Surface Pro (768px - 1376px) */
+@media (min-width: 768px) and (max-width: 1376px) {
   /* 2x2 Grid Footer for iPad Pro, iPad 13 Pro, iPad Mini, Surface Pro */
   .footer-grid {
     grid-template-columns: repeat(2, 1fr) !important;
@@ -380,6 +384,69 @@
 
   .cta-inner-card h2 {
     font-size: 1.85rem;
+  }
+
+  /* Eco Section Mobile 1-Column Stacking & Alignment */
+  .eco-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  .eco-visual-box {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .eco-visual-box img {
+    width: 100% !important;
+    height: 260px !important;
+    object-fit: cover !important;
+    display: block;
+  }
+
+  .eco-content-col {
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .eco-content-col .section-title {
+    font-size: 1.75rem !important;
+    line-height: 1.25 !important;
+    margin-bottom: 0.85rem !important;
+    word-break: break-word;
+  }
+
+  .eco-content-col .eco-subtitle {
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+  }
+
+  .eco-pills-row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0.5rem !important;
+    width: 100% !important;
+    margin: 1.25rem 0 1.5rem 0 !important;
+  }
+
+  .eco-pill {
+    font-size: 0.8rem !important;
+    padding: 0.45rem 0.8rem !important;
+    max-width: 100% !important;
+  }
+
+  .eco-content-col .btn-secondary {
+    width: 100% !important;
+    max-width: 320px !important;
+    height: 48px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
   }
 
   /* Even Button Groups Everywhere (Mobile & Small Tablets) */
