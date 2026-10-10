@@ -133,6 +133,27 @@
     height: 360px;
   }
 
+  /* Home Page Heroes: Full Viewport Height */
+  .hero-editorial,
+  .h2-hero-panorama {
+    min-height: calc(100vh - var(--header-height));
+    min-height: calc(100dvh - var(--header-height));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* All Inner Page Heroes: Exact Same Standard Height */
+  .prod-hero-strip,
+  .cb-hero-strip,
+  .about-hero-section,
+  .contact-hero-billboard {
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .lookbook-item-tall {
     height: 380px;
   }
@@ -235,13 +256,27 @@
     font-size: 0.92rem;
   }
 
-  .hero-editorial {
+  /* Home Page Heroes: Full Viewport Height */
+  .hero-editorial,
+  .h2-hero-panorama {
+    min-height: calc(100vh - var(--header-height));
+    min-height: calc(100dvh - var(--header-height));
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 2.5rem 0 2rem 0;
   }
 
-  .h2-hero-panorama {
-    min-height: calc(100vh - var(--header-height));
-    padding: 2.5rem 0;
+  /* All Inner Page Heroes: Exact Same Standard Height */
+  .prod-hero-strip,
+  .cb-hero-strip,
+  .about-hero-section,
+  .contact-hero-billboard {
+    min-height: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0 2rem 0;
   }
 
   .h2-hero-content-wrap {
